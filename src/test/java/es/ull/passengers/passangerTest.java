@@ -30,9 +30,18 @@ class passangerTest {
 		assertAll("Kaixo hau proba bat da",
 				() -> assertEquals("id1", julen.getIdentifier()),
 				() -> assertEquals("julen", julen.getName())
-
-				
 				);	
+	}
+	
+	@Test
+	@DisplayName("Kaixo hau bigarren proba da")
+	void test2() {
+		assertAll("Hau akatsak ikusteko proba da",
+				() -> assertThrows(RuntimeException.class,
+						() -> {julen.joinFlight(f2);
+						})
+				);
+				
 	}
 
 }
