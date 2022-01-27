@@ -31,38 +31,9 @@
 		<sonar.language>java</sonar.language>
 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.4.0</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.4.0</version>
-			<scope>test</scope>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.jacoco</groupId>
-			<artifactId>jacoco-maven-plugin</artifactId>
-			<version>0.8.6</version>
-		</dependency>
-
-	</dependencies>
 
 	<build>
-		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
-				defaults (may be moved to parent pom) -->
+		
 			<plugins>
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
@@ -73,6 +44,7 @@
 					<version>3.7.1</version>
 				</plugin>
 				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.0.0</version>
 				</plugin>
@@ -87,7 +59,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.22.1</version>
+					<version>2.22.2</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
@@ -124,14 +96,10 @@
 			</plugin>
 				
 			</plugins>
-		</pluginManagement>
 	</build>
 
 	<reporting>
 		<plugins>
-			<plugin>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -157,4 +125,30 @@
 		</plugins>
 
 	</reporting>
+	
+	<dependencies>
+		
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.6.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.6.0</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.6</version>
+		</dependency>
+
+	</dependencies>
+	
 </project>

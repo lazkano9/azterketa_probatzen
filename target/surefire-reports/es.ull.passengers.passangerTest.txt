@@ -1,44 +1,46 @@
 -------------------------------------------------------------------------------
 Test set: es.ull.passengers.passangerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! - in es.ull.passengers.passangerTest
-test  Time elapsed: 0.016 s  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.078 s <<< FAILURE! - in es.ull.passengers.passangerTest
+test  Time elapsed: 0.062 s  <<< ERROR!
 java.lang.VerifyError: 
-Expecting a stackmap frame at branch target 69
+Expecting a stackmap frame at branch target 83
 Exception Details:
   Location:
-    es/ull/flights/Flight.addPassenger(Les/ull/passengers/Passenger;)Z @22: if_icmplt
+    es/ull/flights/Flight.addPassenger(Les/ull/passengers/Passenger;)Z @26: if_icmplt
   Reason:
     Expected stackmap frame at this location.
   Bytecode:
-    0000000: b800 1612 18b6 001c 1100 33b6 0022 2ab6
-    0000010: 003d 2ab4 002e a100 2fb8 0016 1218 b600
-    0000020: 1c11 0034 b600 22bb 003f 59bb 0041 59b7
-    0000030: 0042 1244 b600 482a b600 4ab6 0048 b600
-    0000040: 4db7 0050 bfb8 0016 1218 b600 1c11 0036
-    0000050: b600 222b 2ab6 0056 b800 1612 18b6 001c
-    0000060: 1100 37b6 0022 2ab4 002a 2bb9 005a 0200
-    0000070: ac                                     
+    0000000: b800 694d b800 1612 18b6 001c 1100 33b6
+    0000010: 0022 2ab6 003d 2ab4 002e a100 392c 1007
+    0000020: 0454 b800 1612 18b6 001c 1100 34b6 0022
+    0000030: bb00 3f59 bb00 4159 b700 4212 44b6 0048
+    0000040: 2ab6 004a b600 48b6 004d b700 502c 1008
+    0000050: 0454 bfb8 0016 1218 b600 1c11 0036 b600
+    0000060: 222b 2ab6 0056 2c10 0904 54b8 0016 1218
+    0000070: b600 1c11 0037 b600 222a b400 2a2b b900
+    0000080: 5a02 002c 100a 0454 ac                 
 
 	at es.ull.passengers.passangerTest.setUp(passangerTest.java:19)
 
 test2  Time elapsed: 0 s  <<< ERROR!
 java.lang.VerifyError: 
-Expecting a stackmap frame at branch target 69
+Expecting a stackmap frame at branch target 83
 Exception Details:
   Location:
-    es/ull/flights/Flight.addPassenger(Les/ull/passengers/Passenger;)Z @22: if_icmplt
+    es/ull/flights/Flight.addPassenger(Les/ull/passengers/Passenger;)Z @26: if_icmplt
   Reason:
     Expected stackmap frame at this location.
   Bytecode:
-    0000000: b800 1612 18b6 001c 1100 33b6 0022 2ab6
-    0000010: 003d 2ab4 002e a100 2fb8 0016 1218 b600
-    0000020: 1c11 0034 b600 22bb 003f 59bb 0041 59b7
-    0000030: 0042 1244 b600 482a b600 4ab6 0048 b600
-    0000040: 4db7 0050 bfb8 0016 1218 b600 1c11 0036
-    0000050: b600 222b 2ab6 0056 b800 1612 18b6 001c
-    0000060: 1100 37b6 0022 2ab4 002a 2bb9 005a 0200
-    0000070: ac                                     
+    0000000: b800 694d b800 1612 18b6 001c 1100 33b6
+    0000010: 0022 2ab6 003d 2ab4 002e a100 392c 1007
+    0000020: 0454 b800 1612 18b6 001c 1100 34b6 0022
+    0000030: bb00 3f59 bb00 4159 b700 4212 44b6 0048
+    0000040: 2ab6 004a b600 48b6 004d b700 502c 1008
+    0000050: 0454 bfb8 0016 1218 b600 1c11 0036 b600
+    0000060: 222b 2ab6 0056 2c10 0904 54b8 0016 1218
+    0000070: b600 1c11 0037 b600 222a b400 2a2b b900
+    0000080: 5a02 002c 100a 0454 ac                 
 
 	at es.ull.passengers.passangerTest.setUp(passangerTest.java:19)
 
